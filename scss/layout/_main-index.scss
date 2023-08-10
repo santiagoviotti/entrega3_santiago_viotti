@@ -1,0 +1,116 @@
+.bodyGrid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 34.375rem 112.5rem 14.0625rem;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer"
+    ;
+}
+
+.main{
+    grid-area: main;
+    border-top:solid;
+    border-width: .125rem;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1563694983011-6f4d90358083?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVyY2VkZXMlMjBiZW56fGVufDB8fDB8fHww&w=1000&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 6.25rem 37.5rem 2.5rem 43.75rem 2.5rem 18.75rem;
+    grid-template-areas:
+        "new new new"
+        "n1 n1 n1"
+        ". . ."
+        "n2 n2 n2"
+        ". . ."
+        "us us us"
+    ;
+    h2{
+        grid-area: new;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 3.75rem;
+        padding-right: 1.25rem;
+        padding-top: .625rem;
+        padding-bottom: .625rem;
+        color: white;
+        
+    }
+}
+
+.noticiaUno{
+    grid-area: n1;
+    background: url(../assets/images/mbrojo1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    div{
+        grid-area: n1;
+        width: 14.375rem;
+        height: 25rem;
+        padding: 1.875rem .9375rem .9375rem;
+        margin-left: 3.75rem;
+        font-size: 2.125rem;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.384);
+        display: flex;
+        align-items: center;
+    }
+}
+
+.noticiaDos{
+    grid-area: n2;
+    background: url(../assets/images/lewis-hamilton-W14.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    div{
+        grid-area: n2;
+        width: 12.5rem;
+        height: 28.125rem;
+        padding: 2.5rem .9375rem .9375rem;
+        margin-right: 3.75rem;
+        font-size: 2.125rem;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.596);
+        display: flex;
+        align-items: center;
+    }
+}
+
+.nosotros{
+    grid-area: us;
+    h2{
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 3.75rem;
+    }
+    p{
+        background-color: rgba(253, 252, 252, 0.185);
+        color: white;
+        font-size: 1.375rem;
+        width: 90%;
+        height: 11.25rem;
+        text-align: center;
+        margin-top: 1.25rem;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

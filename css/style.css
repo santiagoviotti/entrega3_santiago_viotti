@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  overflow-x: hidden; }
+
+.header {
+  font-family: 'Poppins', sans-serif;
+  grid-area: header;
+  display: grid;
+  width: 100%;
+  grid-template-rows: 6.25rem 2.5rem 25.625rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "logo logo logo" " nav nav nav" " nav nav nav"; }
+
+.headerSectionUno {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  grid-area: logo; }
+  .headerSectionUno img {
+    height: 6.25rem;
+    margin-left: .3125rem; }
+  .headerSectionUno div {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: .625rem;
+    margin-right: 1.25rem;
+    margin-bottom: 2px; }
+    .headerSectionUno div img {
+      width: 1.5rem;
+      height: 1.5rem; }
+    .headerSectionUno div a {
+      text-decoration: none;
+      font-size: 16px;
+      color: #f8f1f1; }
+
+.headerSectionDos {
+  grid-area: nav;
+  height: 28.125rem;
+  width: 100%;
+  background-image: url(../assets/images/mercedes-benz-sl-amg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-style: solid;
+  border-color: #f2f5f2;
+  border-width: .125rem; }
+  .headerSectionDos nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: .625rem;
+    gap: .9375rem; }
+    .headerSectionDos nav ul li {
+      padding: 4px 8px 2px 8px;
+      background-color: rgba(0, 0, 0, 0.76);
+      border-radius: 0px 0px 10px 10px; }
+      .headerSectionDos nav ul li a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: #f8f1f1; }
+
+.slAmg {
+  padding-left: 2.5rem;
+  padding-top: 3.125rem; }
+  .slAmg div h2 {
+    font-size: 2.5rem;
+    color: #f8f1f1;
+    text-decoration-line: underline; }
+
+.slAmgTxt p {
+  font-size: 1.5rem;
+  color: #f8f1f1;
+  padding-top: 1.5rem;
+  width: 18.75rem; }
+
+.button {
+  padding-left: 2.8125rem;
+  padding-top: 2.5rem; }
+  .button button {
+    background-color: rgba(0, 0, 0, 0.315);
+    height: 2.5rem;
+    width: 8.125rem;
+    border-style: none; }
+    .button button a {
+      font-size: 1.25rem;
+      text-decoration: none;
+      color: white; }
+
+.bodyGrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 34.375rem 112.5rem 14.0625rem;
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+
+.main {
+  grid-area: main;
+  border-top: solid;
+  border-width: .125rem;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1563694983011-6f4d90358083?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVyY2VkZXMlMjBiZW56fGVufDB8fDB8fHww&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 6.25rem 37.5rem 2.5rem 43.75rem 2.5rem 18.75rem;
+  grid-template-areas: "new new new" "n1 n1 n1" ". . ." "n2 n2 n2" ". . ." "us us us"; }
+  .main h2 {
+    grid-area: new;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 3.75rem;
+    padding-right: 1.25rem;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+    color: white; }
+
+.noticiaUno {
+  grid-area: n1;
+  background: url(../assets/images/mbrojo1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .noticiaUno div {
+    grid-area: n1;
+    width: 14.375rem;
+    height: 25rem;
+    padding: 1.875rem .9375rem .9375rem;
+    margin-left: 3.75rem;
+    font-size: 2.125rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.384);
+    display: flex;
+    align-items: center; }
+
+.noticiaDos {
+  grid-area: n2;
+  background: url(../assets/images/lewis-hamilton-W14.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end; }
+  .noticiaDos div {
+    grid-area: n2;
+    width: 12.5rem;
+    height: 28.125rem;
+    padding: 2.5rem .9375rem .9375rem;
+    margin-right: 3.75rem;
+    font-size: 2.125rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.596);
+    display: flex;
+    align-items: center; }
+
+.nosotros {
+  grid-area: us; }
+  .nosotros h2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 3.75rem; }
+  .nosotros p {
+    background-color: rgba(253, 252, 252, 0.185);
+    color: white;
+    font-size: 1.375rem;
+    width: 90%;
+    height: 11.25rem;
+    text-align: center;
+    margin-top: 1.25rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.footer {
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  grid-area: footer; }
+
+.logosFooter ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1.5625rem;
+  padding-bottom: .9375rem;
+  border-bottom-style: solid;
+  border-color: white; }
+  .logosFooter ul li img {
+    height: 120px; }
+
+.contactosRedes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.contactos ul {
+  list-style-type: none;
+  display: flex;
+  color: white;
+  font-size: 1.125rem; }
+  .contactos ul li {
+    margin: 0px 20px 0px 20px; }
+
+.logosRedes ul {
+  display: flex;
+  list-style-type: none;
+  padding-top: .5rem; }
+  .logosRedes ul li img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1.25rem; }
