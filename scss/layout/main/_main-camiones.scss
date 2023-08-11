@@ -1,0 +1,75 @@
+
+/*INICIO CAMIONES*/
+
+.bodyGridCamiones {
+    display: grid;
+    grid-template-rows: 34.375rem 133.125rem 14.0625rem;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "header "
+        "main"
+        "footer"
+    ;
+
+}
+
+.backgroundHeaderCamiones {
+    background-image: url(https://www.mercedes-benz.com.uy/mercedes/site/artic/20221003/imag/foto_0000011620221003125309/1920_x_655.jpg);
+}
+
+.mainCamiones {
+    grid-area: main;
+    border-top: solid;
+    border-width: .125rem;
+    background-color: rgb(248, 248, 248);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 14.375rem 30rem 18.125rem 26.875rem 43.75rem;
+    grid-template-areas:
+        "uno"
+        "dos"
+        "tres"
+        "cuatro"
+        "cinco";
+}
+
+.mainDosCamiones {
+    margin-top: 0px;
+
+    h2 {
+        font-size: 2.1875rem;
+        margin-bottom: .625rem;
+        margin-top: .625rem;
+    }
+}
+
+.listRightCamiones {
+    grid-area: ld;
+    border-left: solid;
+    border-color: black;
+    border-width: .0625rem;
+
+    ul {
+        font-size: 1.5625rem;
+        padding-left: 10%;
+        padding-right: 3%;
+
+        li {
+            list-style-type: none;
+            margin: .625rem 0 .625rem 0;
+            padding-left: .625rem;
+            background-color: lightgray;
+            border-radius: .625rem;
+            display: flex;
+            align-items: center;
+            height: 2.1875rem;
+        }
+    }
+}
+
+.mainCincoCamiones {
+    background-image: url(https://transportemundial.com.ar/wp-content/uploads/2020/10/actros-especial-edition-2-5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

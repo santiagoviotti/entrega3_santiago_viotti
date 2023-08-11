@@ -1,0 +1,69 @@
+.bodyGridVans {
+    display: grid;
+    grid-template-rows: 34.375rem 140rem 14.0625rem;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "header "
+        "main"
+        "footer"
+    ;
+}
+
+.backgroundHeaderVans {
+    background-image: url(https://www.mercedes-benz.com.uy/mercedes/site/artic/20221021/imag/foto_0000000120221021121726/desktop_banner_na.jpg);
+}
+
+.mainVans {
+    grid-area: main;
+    border-top: solid;
+    border-width: .125rem;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 21.25rem 30rem 20rem 26.875rem 43.75rem;
+    grid-template-areas:
+        "uno"
+        "dos"
+        "tres"
+        "cuatro"
+        "cinco";
+
+}
+
+.mainDosVans {
+    margin-top: .3125rem;
+
+    h2 {
+        margin-bottom: .75rem;
+    }
+}
+
+.gridListasVans {
+    height: 15rem;
+    padding-top: .9375rem;
+
+}
+
+.listRightVans {
+    grid-area: ld;
+    border-left: solid;
+    border-color: black;
+    border-width: .0625rem;
+
+    ul {
+        font-size: 1.5625rem;
+        padding-left: 10%;
+        padding-right: 3%;
+
+        li {
+            list-style-type: none;
+            margin: .625rem 0 .625rem 0;
+            padding-left: .625rem;
+            background-color: lightgray;
+            border-radius: .625rem;
+            display: flex;
+            align-items: center;
+            height: 2.1875rem;
+        }
+    }
+}

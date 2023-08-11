@@ -2,7 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 @import "./layout/header";
-@import "./layout/main-index";
+@import "./layout/main/main-index";
+@import "./layout/main/main-vehiculos";
+@import "./layout/main/main-camiones";
+@import "./layout/main/main-vans";
+@import "./layout/main/main-service";
 @import "./layout/footer";
 
 

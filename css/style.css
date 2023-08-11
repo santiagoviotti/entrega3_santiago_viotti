@@ -186,6 +186,353 @@ body {
     justify-content: center;
     align-items: center; }
 
+.bodyGridVehiculos {
+  display: grid;
+  width: 100%;
+  grid-template-rows: 34.375rem 132.1875rem 14.0625rem;
+  grid-template-areas: "header" "main" "footer"; }
+
+.backgroundHeader {
+  background-image: url(https://cdn.motor1.com/images/mgl/bexBr/s3/mercedes-eqb.jpg); }
+
+.buttonVehiculos button {
+  background-color: rgba(0, 0, 0, 0.575); }
+
+.mainVehiculos {
+  background-color: #ecebeb;
+  border-top: solid;
+  border-width: .125rem;
+  grid-area: main;
+  display: grid;
+  grid-template-rows: 13.4375rem 30rem 18.125rem 26.875rem 43.75rem;
+  grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco"; }
+
+.mainUno {
+  grid-area: uno;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-color: black;
+  border-bottom: solid;
+  border-width: 1.5px; }
+
+.modelos ul {
+  list-style-type: none;
+  font-size: 1.75rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: .5rem;
+  padding-bottom: .5rem;
+  border-color: black;
+  border-bottom: solid;
+  border-width: 1.5px; }
+
+.iconosAutos ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 1.125rem;
+  margin-bottom: .3125rem; }
+  .iconosAutos ul li h3 {
+    font-size: 1.3125rem; }
+
+.mainDos {
+  grid-area: dos;
+  margin-top: 1.125rem;
+  border-bottom: solid;
+  color: black;
+  border-width: 1.5px; }
+  .mainDos h2 {
+    font-size: 1.875rem;
+    display: flex;
+    justify-content: center; }
+  .mainDos img {
+    width: 100%;
+    object-fit: none;
+    height: 25rem;
+    display: flex;
+    justify-content: center; }
+
+/*MAIN TRES*/
+.mainTres {
+  grid-area: tres;
+  border-bottom: solid;
+  color: black;
+  border-width: 1.5px; }
+  .mainTres h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.1875rem;
+    padding-top: .625rem; }
+
+.gridListas {
+  padding-top: 2.1875rem;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 100%;
+  grid-template-areas: "li ld"; }
+
+.listLeft {
+  grid-area: li;
+  border-right: solid;
+  border-color: black;
+  border-width: .0625rem; }
+  .listLeft ul {
+    font-size: 1.5625rem;
+    padding-left: 10%;
+    padding-right: 10%; }
+    .listLeft ul li {
+      list-style-type: none;
+      margin: .625rem 0 .625rem 0;
+      padding-left: .625rem;
+      background-color: lightgray;
+      border-radius: .625rem;
+      display: flex;
+      align-items: center;
+      height: 2.1875rem; }
+
+.listRight {
+  grid-area: ld;
+  border-left: solid;
+  border-color: black;
+  border-width: .0625rem; }
+  .listRight ul {
+    font-size: 1.5625rem;
+    padding-left: 10%;
+    padding-right: 15%; }
+    .listRight ul li {
+      list-style-type: none;
+      margin: .625rem 0 .625rem 0;
+      padding-left: .625rem;
+      background-color: lightgray;
+      border-radius: .625rem;
+      display: flex;
+      align-items: center;
+      height: 2.1875rem; }
+
+/*MAIN CUATRO*/
+.mainCuatro {
+  grid-area: cuatro;
+  padding-top: 1.25rem;
+  border-bottom: solid;
+  border-color: black;
+  border-width: .0938rem; }
+  .mainCuatro h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.1875rem; }
+
+.gridMotor {
+  padding-top: 2.1875rem;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 100%;
+  grid-template-areas: "listIzq listDer"; }
+  .gridMotor ul {
+    grid-area: listIzq;
+    font-size: 1.5625rem;
+    padding: 5% 10% 5% 10%;
+    border-right: solid;
+    border-color: black;
+    border-width: .0625rem; }
+    .gridMotor ul li {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      height: 2.1875rem;
+      margin: .625rem 0 .625rem 0;
+      padding-left: .625rem;
+      background-color: lightgray;
+      border-radius: .625rem; }
+  .gridMotor div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: solid;
+    border-color: black;
+    border-width: .0625rem; }
+    .gridMotor div img {
+      height: 18.75rem;
+      width: 25rem;
+      border-radius: 25%; }
+
+.mainCinco {
+  grid-area: cinco;
+  background-image: url(https://www.mercedes-benz.com.uy/mercedes/site/artic/20230120/imag/foto_0000009720230120152324/Disen_o_interior_clase_SL_amg_desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .mainCinco h2 {
+    width: 8.75rem;
+    text-align: center;
+    background-color: black;
+    font-size: 2.1875rem;
+    color: white;
+    margin-left: 1.25rem;
+    margin-top: 1.25rem; }
+
+/*INICIO CAMIONES*/
+.bodyGridCamiones {
+  display: grid;
+  grid-template-rows: 34.375rem 133.125rem 14.0625rem;
+  grid-template-columns: 100%;
+  grid-template-areas: "header " "main" "footer"; }
+
+.backgroundHeaderCamiones {
+  background-image: url(https://www.mercedes-benz.com.uy/mercedes/site/artic/20221003/imag/foto_0000011620221003125309/1920_x_655.jpg); }
+
+.mainCamiones {
+  grid-area: main;
+  border-top: solid;
+  border-width: .125rem;
+  background-color: #f8f8f8;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 14.375rem 30rem 18.125rem 26.875rem 43.75rem;
+  grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco"; }
+
+.mainDosCamiones {
+  margin-top: 0px; }
+  .mainDosCamiones h2 {
+    font-size: 2.1875rem;
+    margin-bottom: .625rem;
+    margin-top: .625rem; }
+
+.listRightCamiones {
+  grid-area: ld;
+  border-left: solid;
+  border-color: black;
+  border-width: .0625rem; }
+  .listRightCamiones ul {
+    font-size: 1.5625rem;
+    padding-left: 10%;
+    padding-right: 3%; }
+    .listRightCamiones ul li {
+      list-style-type: none;
+      margin: .625rem 0 .625rem 0;
+      padding-left: .625rem;
+      background-color: lightgray;
+      border-radius: .625rem;
+      display: flex;
+      align-items: center;
+      height: 2.1875rem; }
+
+.mainCincoCamiones {
+  background-image: url(https://transportemundial.com.ar/wp-content/uploads/2020/10/actros-especial-edition-2-5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.bodyGridVans {
+  display: grid;
+  grid-template-rows: 34.375rem 140rem 14.0625rem;
+  grid-template-columns: 100%;
+  grid-template-areas: "header " "main" "footer"; }
+
+.backgroundHeaderVans {
+  background-image: url(https://www.mercedes-benz.com.uy/mercedes/site/artic/20221021/imag/foto_0000000120221021121726/desktop_banner_na.jpg); }
+
+.mainVans {
+  grid-area: main;
+  border-top: solid;
+  border-width: .125rem;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 21.25rem 30rem 20rem 26.875rem 43.75rem;
+  grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco"; }
+
+.mainDosVans {
+  margin-top: .3125rem; }
+  .mainDosVans h2 {
+    margin-bottom: .75rem; }
+
+.gridListasVans {
+  height: 15rem;
+  padding-top: .9375rem; }
+
+.listRightVans {
+  grid-area: ld;
+  border-left: solid;
+  border-color: black;
+  border-width: .0625rem; }
+  .listRightVans ul {
+    font-size: 1.5625rem;
+    padding-left: 10%;
+    padding-right: 3%; }
+    .listRightVans ul li {
+      list-style-type: none;
+      margin: .625rem 0 .625rem 0;
+      padding-left: .625rem;
+      background-color: lightgray;
+      border-radius: .625rem;
+      display: flex;
+      align-items: center;
+      height: 2.1875rem; }
+
+/*INICIO SERVIDE*/
+.bodyGridService {
+  display: grid;
+  grid-template-rows: 34.375rem 81.25rem 14.0625rem;
+  grid-template-columns: 100%;
+  grid-template-areas: "header " "main" "footer"; }
+
+.backgroundHeaderService {
+  background-image: url(https://www.mbusa.com/content/dam/mb-nafta/us/owners/maintenance-landing/Certified%20Collision.jpg); }
+
+.mainService {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  grid-area: main;
+  background-image: url(https://images.unsplash.com/photo-1563694983011-6f4d90358083?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVyY2VkZXMlMjBiZW56fGVufDB8fDB8fHww&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.mainUnoService h2 {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: .75rem;
+  margin-bottom: .625rem;
+  text-decoration: underline;
+  margin-bottom: 1.875rem; }
+
+.mainUnoService p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2.5rem; }
+
+.formulario form ul {
+  font-size: 1.5rem;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .formulario form ul li {
+    margin: 12px 0 12px 40px;
+    display: flex;
+    flex-direction: column; }
+    .formulario form ul li input {
+      width: 300px;
+      height: 1.875rem; }
+    .formulario form ul li label {
+      width: 300px;
+      height: 1.875rem; }
+
+.formulario div {
+  display: flex;
+  justify-content: center;
+  padding-left: 1.5625rem;
+  margin-top: 1.25rem;
+  margin-bottom: 2.5rem; }
+  .formulario div input {
+    width: 4.6875rem;
+    height: 2.5rem;
+    font-size: 1.5rem; }
+
 .footer {
   font-family: 'Poppins', sans-serif;
   background-color: black;

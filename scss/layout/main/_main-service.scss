@@ -1,0 +1,86 @@
+/*INICIO SERVIDE*/
+
+.bodyGridService {
+    display: grid;
+    grid-template-rows: 34.375rem 81.25rem 14.0625rem;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "header "
+        "main"
+        "footer"
+    ;
+}
+
+.backgroundHeaderService {
+    background-image: url(https://www.mbusa.com/content/dam/mb-nafta/us/owners/maintenance-landing/Certified%20Collision.jpg);
+}
+
+.mainService {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    grid-area: main;
+    background-image: url(https://images.unsplash.com/photo-1563694983011-6f4d90358083?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVyY2VkZXMlMjBiZW56fGVufDB8fDB8fHww&w=1000&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.mainUnoService {
+    h2 {
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        margin-top: .75rem;
+        margin-bottom: .625rem;
+        text-decoration: underline;
+        margin-bottom: 1.875rem;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.formulario {
+    form {
+        ul {
+            font-size: 1.5rem;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            li {
+                margin: 12px 0 12px 40px;
+                display: flex;
+                flex-direction: column;
+                input {
+                    width: 300px;
+                    height: 1.875rem;
+                }
+                label{
+                    width: 300px;
+                    height: 1.875rem;
+                }
+
+            }
+        }
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        padding-left: 1.5625rem;
+        margin-top: 1.25rem;
+        margin-bottom: 2.5rem;
+
+        input{
+            width: 4.6875rem;
+            height: 2.5rem;
+            font-size: 1.5rem;
+        }
+    }
+}
