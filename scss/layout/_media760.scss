@@ -1,0 +1,52 @@
+@media (max-width:760px){
+    /*VEHICULOS MAIN*/
+.gridMotor {
+    padding-top: 2.1875rem;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 100%;
+    grid-template-areas:
+        "listIzq listDer";
+
+    ul {
+        grid-area: listIzq;
+        font-size: 1.5625rem;
+        padding: 5% 5% 5% 10%;
+        border-right: solid;
+        border-color: black;
+        border-width: .0625rem;
+
+        li {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            height: 2.1875rem;
+            margin: .625rem 0 .625rem 0;
+            padding-left: .625rem;
+            background-color: lightgray;
+            border-radius: .625rem;
+        }
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: solid;
+        border-color: black;
+        border-width: .0625rem;
+
+        img {
+            height: 17.5rem;
+            width: 18.75rem;
+            border-radius: 25%;
+        }
+    }
+}
+
+/*CAMIONES MAIN*/
+.gridMotorCamiones{
+    grid-template-columns: 55% 45%;
+}
+
+}
