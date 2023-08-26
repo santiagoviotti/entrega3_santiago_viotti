@@ -1,23 +1,353 @@
-@media (max-width:425) {
+@media (max-width:425px) {
 
     /*HEADER*/
+    .headerSectionUno {
+        width: 100vw;
+    }
+
     .headerSectionDos {
+        width: 100vw;
+
         .nav {
             width: 100vw;
 
             ul {
+                background-color: black;
                 justify-content: center;
                 margin-left: 0rem;
                 gap: 0rem;
-                font-size: .875rem;
-
 
                 li {
-                    padding: 4px 8px 2px 8px;
+                    padding: 4px 4px 2px 4px;
+                    border-radius: 0px 0px 0px 0px;
+
+                    a {
+                        font-size: .875rem;
+                    }
                 }
             }
         }
     }
+
+
+    .slAmg {
+        padding-left: 1.25rem;
+        padding-top: 1.5625rem;
+
+        div {
+            h2 {
+                font-size: 1.5rem;
+                color: rgb(248, 241, 241);
+                text-decoration-line: underline;
+                background-color: rgba(0, 0, 0, 0.425);
+                width: 11.25rem;
+                text-align: center;
+            }
+        }
+    }
+
+    /*FOOTER*/
+    .logosFooter {
+        ul {
+            li {
+                img {
+                    width: 5.625rem;
+                }
+            }
+        }
+    }
+
+    .contactos {
+        ul {
+            li {
+                font-size: .8125rem;
+                margin-left: .3125rem;
+            }
+        }
+    }
+
+
+    /*INDEX*/
+
+    .bodyGrid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: 28.75rem 93.75rem 11.25rem;
+        grid-template-areas:
+            "header header header header"
+            "main main main main"
+            "footer footer footer footer"
+        ;
+    }
+
+    .main {
+        grid-area: main;
+        border-top: solid;
+        border-width: .125rem;
+        width: 100%;
+        background-image: url(https://images.unsplash.com/photo-1563694983011-6f4d90358083?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVyY2VkZXMlMjBiZW56fGVufDB8fDB8fHww&w=1000&q=80);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 3.75rem 28.125rem 2.5rem 28.125rem 28.125rem;
+        grid-template-areas:
+            "new new new"
+            "n1 n1 n1"
+            ". . ."
+            "n2 n2 n2"
+            "us us us"
+        ;
+    }
+
+    .nosotros {
+        h2 {
+            text-decoration: underline;
+        }
+
+        p {
+            height: 20.25rem;
+            font-size: 1.1875rem;
+        }
+    }
+
+    /*VEHICULOS*/
+    .bodyGridVehiculos {
+        display: grid;
+        width: 100%;
+        grid-template-rows: 28.125rem 109.375rem 11.5625rem;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer"
+        ;
+    }
+
+    .mainVehiculos {
+        width: 100vw;
+        background-color: rgb(236, 235, 235);
+        border-top: solid;
+        border-width: .125rem;
+        grid-area: main;
+        display: grid;
+        grid-template-rows: 12.5rem 23.75rem 27.5rem 21.875rem 25rem;
+        grid-template-areas:
+            "uno"
+            "dos"
+            "tres"
+            "cuatro"
+            "cinco";
+    }
+
+    .modelos {
+        ul {
+            width: 100vw;
+
+            li {
+                font-size: 1.125rem;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    .iconosAutos {
+        width: 100vw;
+
+        ul {
+            justify-content: space-evenly;
+            margin-left: 0.5rem;
+
+            li {
+                width: 9.375rem;
+
+                img {
+                    width: 9.375rem;
+                }
+
+                h3 {
+                    width: 9.375rem;
+                }
+            }
+        }
+    }
+
+    .mainUno {
+        width: 100vw;
+    }
+
+    .mainDos {
+        width: 100vw;
+
+        h2 {
+            font-size: 1.375rem;
+
+            img {
+                object-fit: contain;
+                justify-content: center;
+
+            }
+        }
+    }
+
+    .mainTres {
+        width: 100vw;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        ul {
+            font-size: 1.125rem;
+
+            li {
+                width: 18.75rem;
+            }
+        }
+    }
+
+    .mainCuatro {
+        width: 100vw;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        ul {
+            font-size: 1.125rem;
+            padding-left: 5%;
+            padding-right: 5%;
+
+            li {
+                width: 17.5rem;
+            }
+        }
+    }
+
+    .mainCinco {
+        width: 100vw;
+    }
+
+
+    /*CAMIONES*/
+    .bodyGridCamiones {
+        display: grid;
+        grid-template-rows: 28.125rem 131.125rem 11.5625rem;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "header "
+            "main"
+            "footer"
+        ;
+
+    }
+
+    .mainCamiones {
+        grid-area: main;
+        border-top: solid;
+        border-width: .125rem;
+        background-color: rgb(248, 248, 248);
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 9.375rem 27.5rem 28.5rem 21.875rem 43.75rem;
+        grid-template-areas:
+            "uno"
+            "dos"
+            "tres"
+            "cuatro"
+            "cinco";
+    }
+
+    .mainDosCamiones {
+        img {
+            height: 21.25rem;
+        }
+    }
+
+    .listLeftCamiones {
+        width: 20rem;
+
+        ul {
+            margin: 0 5% 0 5%;
+
+            li {
+                width: 17.5rem;
+                font-size: 1.125rem;
+            }
+        }
+    }
+
+    .listRightCamiones {
+        width: 20rem;
+
+        ul {
+            margin: 0 5% 0 5%;
+            li {
+                width: 17.5rem;
+                font-size: 1.125rem;
+            }
+        }
+    }
+
+    .gridMotorCamiones{
+        ul{
+            li{
+                font-size: 1.255rem;
+            }
+    }
+
+}
+
+/*VANS*/
+.bodyGridVans {
+    display: grid;
+    grid-template-rows: 28.75rem 122.875rem 11.5625rem;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "header "
+        "main"
+        "footer"
+    ;
+}
+
+.mainVans {
+    grid-area: main;
+    border-top: solid;
+    border-width: .125rem;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 17.25rem 23.75rem 30rem 20.625rem 31.25rem;
+    grid-template-areas:
+        "uno"
+        "dos"
+        "tres"
+        "cuatro"
+        "cinco";
+
+}
+
+/*SERVICE*/
+.formulario{
+    form{
+        ul{
+            margin: 0 5% 0 5%;
+            li{
+            input{
+                width: 17.5rem;
+            }
+        }
+        }
+    }
+}
+
+.aboutService{
+p{
+    height: 21.25rem;
+}
+}
 
 
 }
