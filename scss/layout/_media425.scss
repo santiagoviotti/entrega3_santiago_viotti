@@ -1,0 +1,23 @@
+@media (max-width:425) {
+
+    /*HEADER*/
+    .headerSectionDos {
+        .nav {
+            width: 100vw;
+
+            ul {
+                justify-content: center;
+                margin-left: 0rem;
+                gap: 0rem;
+                font-size: .875rem;
+
+
+                li {
+                    padding: 4px 8px 2px 8px;
+                }
+            }
+        }
+    }
+
+
+}
