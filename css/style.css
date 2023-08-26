@@ -491,6 +491,7 @@ body {
   background-size: cover; }
 
 .mainUnoService h2 {
+  color: white;
   font-size: 2rem;
   display: flex;
   justify-content: center;
@@ -500,6 +501,7 @@ body {
   margin-bottom: 1.875rem; }
 
 .mainUnoService p {
+  color: white;
   text-align: center;
   font-size: 1.5rem;
   margin-left: 5%;
@@ -520,6 +522,7 @@ body {
       width: 300px;
       height: 1.875rem; }
     .formulario form ul li label {
+      color: white;
       width: 300px;
       height: 1.875rem; }
 
